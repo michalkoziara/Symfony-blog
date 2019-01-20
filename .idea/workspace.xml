@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87b4ef25-8b1e-4957-8ce7-2510a68f6956" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20190120225153.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190120224410.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -94,43 +97,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Version20190120224410.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190120224410.php">
+      <file leaf-file-name="Version20190120225153.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190120225153.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            <state relative-caret-position="-357">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1548024330016" expanded="true" signature="658:712" ph="ALTER TABLE article... " />
-                <marker date="1548024330016" expanded="true" signature="739:794" ph="ALTER TABLE comment... " />
-                <marker date="1548024330016" expanded="true" signature="821:878" ph="ALTER TABLE api_token... " />
-                <marker date="1548024330016" expanded="true" signature="994:1306" ph="CREATE TABLE... users" />
-                <marker date="1548024330016" expanded="true" signature="1418:1472" ph="ALTER TABLE article... " />
-                <marker date="1548024330016" expanded="true" signature="1499:1633" ph="ALTER TABLE article... " />
-                <marker date="1548024330016" expanded="true" signature="1660:1715" ph="ALTER TABLE comment... " />
-                <marker date="1548024330016" expanded="true" signature="1742:1877" ph="ALTER TABLE comment... " />
-                <marker date="1548024330016" expanded="true" signature="1904:1961" ph="ALTER TABLE api_token... " />
-                <marker date="1548024330016" expanded="true" signature="1988:2123" ph="ALTER TABLE api_token... " />
-                <marker date="1548024330016" expanded="true" signature="2496:2550" ph="ALTER TABLE article... " />
-                <marker date="1548024330016" expanded="true" signature="2577:2632" ph="ALTER TABLE comment... " />
-                <marker date="1548024330016" expanded="true" signature="2659:2716" ph="ALTER TABLE api_token... " />
-                <marker date="1548024330016" expanded="true" signature="2892:3205" ph="CREATE TABLE... user" />
-                <marker date="1548024330016" expanded="true" signature="3318:3334" ph="DROP TABLE u... " />
-                <marker date="1548024330016" expanded="true" signature="3361:3415" ph="ALTER TABLE article... " />
-                <marker date="1548024330016" expanded="true" signature="3442:3577" ph="ALTER TABLE article... " />
-                <marker date="1548024330016" expanded="true" signature="3604:3659" ph="ALTER TABLE comment... " />
-                <marker date="1548024330016" expanded="true" signature="3686:3822" ph="ALTER TABLE comment... " />
-                <marker date="1548024330016" expanded="true" signature="3849:3906" ph="ALTER TABLE api_token... " />
-                <marker date="1548024330016" expanded="true" signature="3933:4069" ph="ALTER TABLE api_token... " />
+                <marker date="1548024714230" expanded="true" signature="1109:1502" ph="CREATE TABLE... article" />
+                <marker date="1548024714230" expanded="true" signature="1696:1800" ph="CREATE TABLE... article_tag" />
+                <marker date="1548024714230" expanded="true" signature="1999:2263" ph="CREATE TABLE... comment" />
+                <marker date="1548024714230" expanded="true" signature="2457:2617" ph="CREATE TABLE... api_token" />
+                <marker date="1548024714230" expanded="true" signature="2727:2938" ph="CREATE TABLE... tag" />
+                <marker date="1548024714230" expanded="true" signature="3046:3358" ph="CREATE TABLE... users" />
+                <marker date="1548024714230" expanded="true" signature="3470:3604" ph="ALTER TABLE article... " />
+                <marker date="1548024714230" expanded="true" signature="3631:3791" ph="ALTER TABLE article_tag... " />
+                <marker date="1548024714230" expanded="true" signature="3818:3970" ph="ALTER TABLE article_tag... " />
+                <marker date="1548024714230" expanded="true" signature="3997:4135" ph="ALTER TABLE comment... " />
+                <marker date="1548024714230" expanded="true" signature="4162:4297" ph="ALTER TABLE comment... " />
+                <marker date="1548024714230" expanded="true" signature="4324:4459" ph="ALTER TABLE api_token... " />
+                <marker date="1548024714230" expanded="true" signature="4832:4891" ph="ALTER TABLE article_tag... " />
+                <marker date="1548024714230" expanded="true" signature="4918:4973" ph="ALTER TABLE comment... " />
+                <marker date="1548024714230" expanded="true" signature="5000:5059" ph="ALTER TABLE article_tag... " />
+                <marker date="1548024714230" expanded="true" signature="5086:5140" ph="ALTER TABLE article... " />
+                <marker date="1548024714230" expanded="true" signature="5167:5222" ph="ALTER TABLE comment... " />
+                <marker date="1548024714230" expanded="true" signature="5249:5306" ph="ALTER TABLE api_token... " />
+                <marker date="1548024714230" expanded="true" signature="5644:5662" ph="DROP TABLE a... " />
+                <marker date="1548024714230" expanded="true" signature="5689:5711" ph="DROP TABLE a... " />
+                <marker date="1548024714230" expanded="true" signature="5738:5756" ph="DROP TABLE c... " />
+                <marker date="1548024714230" expanded="true" signature="5783:5803" ph="DROP TABLE a... " />
+                <marker date="1548024714230" expanded="true" signature="5830:5844" ph="DROP TABLE t... " />
+                <marker date="1548024714230" expanded="true" signature="5871:5887" ph="DROP TABLE u... " />
               </folding>
             </state>
           </provider>
@@ -579,12 +585,12 @@
       <workItem from="1547371251907" duration="30389000" />
       <workItem from="1547830008879" duration="6792000" />
       <workItem from="1547879573731" duration="57949000" />
-      <workItem from="1547982526470" duration="35249000" />
+      <workItem from="1547982526470" duration="35619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179404000" />
+    <option name="totallyTimeSpent" value="179774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -624,18 +630,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="82" column="36" lean-forward="false" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="36" />
-          <folding>
-            <element signature="e#34#57#0#PHP" expanded="false" />
-            <element signature="e#2265#2279#0#PHP" expanded="false" />
-            <element signature="e#2902#2916#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/CommentAdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
@@ -1017,36 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190120224410.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding>
-            <marker date="1548024330016" expanded="true" signature="658:712" ph="ALTER TABLE article... " />
-            <marker date="1548024330016" expanded="true" signature="739:794" ph="ALTER TABLE comment... " />
-            <marker date="1548024330016" expanded="true" signature="821:878" ph="ALTER TABLE api_token... " />
-            <marker date="1548024330016" expanded="true" signature="994:1306" ph="CREATE TABLE... users" />
-            <marker date="1548024330016" expanded="true" signature="1418:1472" ph="ALTER TABLE article... " />
-            <marker date="1548024330016" expanded="true" signature="1499:1633" ph="ALTER TABLE article... " />
-            <marker date="1548024330016" expanded="true" signature="1660:1715" ph="ALTER TABLE comment... " />
-            <marker date="1548024330016" expanded="true" signature="1742:1877" ph="ALTER TABLE comment... " />
-            <marker date="1548024330016" expanded="true" signature="1904:1961" ph="ALTER TABLE api_token... " />
-            <marker date="1548024330016" expanded="true" signature="1988:2123" ph="ALTER TABLE api_token... " />
-            <marker date="1548024330016" expanded="true" signature="2496:2550" ph="ALTER TABLE article... " />
-            <marker date="1548024330016" expanded="true" signature="2577:2632" ph="ALTER TABLE comment... " />
-            <marker date="1548024330016" expanded="true" signature="2659:2716" ph="ALTER TABLE api_token... " />
-            <marker date="1548024330016" expanded="true" signature="2892:3205" ph="CREATE TABLE... user" />
-            <marker date="1548024330016" expanded="true" signature="3318:3334" ph="DROP TABLE u... " />
-            <marker date="1548024330016" expanded="true" signature="3361:3415" ph="ALTER TABLE article... " />
-            <marker date="1548024330016" expanded="true" signature="3442:3577" ph="ALTER TABLE article... " />
-            <marker date="1548024330016" expanded="true" signature="3604:3659" ph="ALTER TABLE comment... " />
-            <marker date="1548024330016" expanded="true" signature="3686:3822" ph="ALTER TABLE comment... " />
-            <marker date="1548024330016" expanded="true" signature="3849:3906" ph="ALTER TABLE api_token... " />
-            <marker date="1548024330016" expanded="true" signature="3933:4069" ph="ALTER TABLE api_token... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/article/homepage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1066,11 +1030,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190120224410.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190120225153.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1548024714230" expanded="true" signature="1109:1502" ph="CREATE TABLE... article" />
+            <marker date="1548024714230" expanded="true" signature="1696:1800" ph="CREATE TABLE... article_tag" />
+            <marker date="1548024714230" expanded="true" signature="1999:2263" ph="CREATE TABLE... comment" />
+            <marker date="1548024714230" expanded="true" signature="2457:2617" ph="CREATE TABLE... api_token" />
+            <marker date="1548024714230" expanded="true" signature="2727:2938" ph="CREATE TABLE... tag" />
+            <marker date="1548024714230" expanded="true" signature="3046:3358" ph="CREATE TABLE... users" />
+            <marker date="1548024714230" expanded="true" signature="3470:3604" ph="ALTER TABLE article... " />
+            <marker date="1548024714230" expanded="true" signature="3631:3791" ph="ALTER TABLE article_tag... " />
+            <marker date="1548024714230" expanded="true" signature="3818:3970" ph="ALTER TABLE article_tag... " />
+            <marker date="1548024714230" expanded="true" signature="3997:4135" ph="ALTER TABLE comment... " />
+            <marker date="1548024714230" expanded="true" signature="4162:4297" ph="ALTER TABLE comment... " />
+            <marker date="1548024714230" expanded="true" signature="4324:4459" ph="ALTER TABLE api_token... " />
+            <marker date="1548024714230" expanded="true" signature="4832:4891" ph="ALTER TABLE article_tag... " />
+            <marker date="1548024714230" expanded="true" signature="4918:4973" ph="ALTER TABLE comment... " />
+            <marker date="1548024714230" expanded="true" signature="5000:5059" ph="ALTER TABLE article_tag... " />
+            <marker date="1548024714230" expanded="true" signature="5086:5140" ph="ALTER TABLE article... " />
+            <marker date="1548024714230" expanded="true" signature="5167:5222" ph="ALTER TABLE comment... " />
+            <marker date="1548024714230" expanded="true" signature="5249:5306" ph="ALTER TABLE api_token... " />
+            <marker date="1548024714230" expanded="true" signature="5644:5662" ph="DROP TABLE a... " />
+            <marker date="1548024714230" expanded="true" signature="5689:5711" ph="DROP TABLE a... " />
+            <marker date="1548024714230" expanded="true" signature="5738:5756" ph="DROP TABLE c... " />
+            <marker date="1548024714230" expanded="true" signature="5783:5803" ph="DROP TABLE a... " />
+            <marker date="1548024714230" expanded="true" signature="5830:5844" ph="DROP TABLE t... " />
+            <marker date="1548024714230" expanded="true" signature="5871:5887" ph="DROP TABLE u... " />
+          </folding>
         </state>
       </provider>
     </entry>
