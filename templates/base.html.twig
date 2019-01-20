@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <title>{% block title %}Witaj - Kosmos{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    {% endblock %}
+</head>
+
+<body>
+{% if is_granted('ROLE_PREVIOUS_ADMIN') %}
+    <div class="alert alert-warning" style="margin-bottom: 0;">
+        Jesteś teraz w widoku użytkownika {{ app.getUser() }}.
+        <a href="{{ path('app_homepage', {'_switch_user': '_exit'}) }}">Wyjdź z podglądu</a>
+    </div>
+{% endif %}
+<nav class="navbar navbar-expand-lg navbar-dark navbar-bg {{ app.session.flashbag.peek('success')|length > 0 ? '' : 'mb-5' }}">
+    <a style="margin-left: 75px;" class="navbar-brand space-brand" href="{{ path('app_homepage') }}">Strona główna</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+            {% if is_granted('ROLE_ADMIN_ARTICLE') %}
+                <li class="nav-item">
+                    <a style="color: #fff;" class="nav-link" href="{{ path('admin_article_new') }}">Stwórz artykuł</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: #fff;" class="nav-link" href="{{ path('admin_article_list') }}">Pokaż artykuły</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: #fff;" class="nav-link" href="{{ path('comment_admin') }}">Sprawdź komentarze</a>
+                </li>
+            {% endif %}
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            {% if is_granted('ROLE_USER') %}
+                <li class="nav-item dropdown" style="margin-right: 75px;">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="nav-profile-img rounded-circle" src="{{ app.user.imagePath }}">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{{ path('app_account') }}">Profil</a>
+                        <a class="dropdown-item" href="{{ path('app_logout') }}">Wyloguj</a>
+                    </div>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a style="color: #fff;" class="nav-link" href="{{ path('app_login') }}">Zaloguj się</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: #fff;" class="nav-link" href="{{ path('app_register') }}">Zarejestruj się</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+
+{% for message in app.flashes('success') %}
+    <div class="alert alert-success">
+        {{ message }}
+    </div>
+{% endfor %}
+
+{% block body %}{% endblock %}
+
+<footer class="footer">
+    <div class="container text-center">
+        <span class="text-muted">Wykonał <a
+                    href="https://michalkoziara.github.io">Michał Koziara</a></span>
+    </div>
+</footer>
+
+
+{% block javascripts %}
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script>
+        $('.dropdown-toggle').dropdown();
+    </script>
+{% endblock %}
+</body>
+</html>

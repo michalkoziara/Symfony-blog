@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Symfony2PluginSettings">
+    <option name="pathToTranslation" value="translations" />
+    <option name="directoryToWeb" value="public" />
+    <option name="directoryToApp" value="" />
+    <option name="pluginEnabled" value="true" />
+    <option name="profilerCsvPath" value="" />
+    <option name="profilerHttpEnabled" value="true" />
+    <option name="profilerHttpUrl" value="http://192.168.88.233:8080" />
+    <option name="lastServiceGeneratorLanguage" value="yaml" />
+  </component>
+</project>

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+{% block title %}Konto{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="row user-menu-container square">
+            <div class="col-md-12 user-details">
+                <div class="row spacepurplebg white">
+                    <div class="col-md-2 no-pad">
+                        <div class="user-image">
+                            <img src="{{ app.user.imagePath }}" class="img-responsive thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-md-10 no-pad">
+                        <div class="user-pad">
+                            <h3>Witaj, {{ app.user.firstName }}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

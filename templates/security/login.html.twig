@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+{% form_theme loginForm _self %}
+
+{% block title %}Logowanie{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    {#<link rel="stylesheet" href="{{ asset('css/login.css') }}">#}
+{% endblock %}
+
+{% block _user_login_form_rememberMe_row %}
+    <div class="checkbox mb-3">
+        {{ form_errors(form) }}
+        <label>
+            <input type="checkbox" name="{{ full_name }}"> Zapamiętaj dane logowania
+        </label>
+    </div>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                {% if error %}
+                    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                {% endif %}
+
+                {{ form_start(loginForm) }}
+                {{ form_row(loginForm.email, {
+                    attr: { placeholder: 'Email' },
+                    'label':'Email'
+                }) }}
+                {{ form_row(loginForm.password, {
+                    attr: { placeholder: 'Hasło' },
+                    'label':'Hasło'
+                }) }}
+                {{ form_row(loginForm.rememberMe) }}
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                    Zaloguj
+                </button>
+                {{ form_end(loginForm) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'content_base.html.twig' %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+    <script src="{{ asset('js/algolia-autocomplete.js') }}"></script>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/algolia-autocomplete.css') }}">
+{% endblock %}
+
+{% block content_body %}
+    <h1>Nowy artykuł</h1>
+    {{ form_start(articleForm) }}
+    {{ form_row(articleForm.title, {
+        label: 'Article title'
+    }) }}
+    {{ form_row(articleForm.author) }}
+    {{ form_row(articleForm.content) }}
+    {% if articleForm.publishedAt is defined %}
+        {{ form_row(articleForm.publishedAt) }}
+    {% endif %}
+    {{ form_row(articleForm.logo, {'label': 'Click here to upload new logo!'}) }}
+    <button type="submit" class="btn btn-primary">Create!</button>
+    {{ form_end(articleForm) }}
+{% endblock %}

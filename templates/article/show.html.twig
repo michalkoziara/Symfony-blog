@@ -1,0 +1,97 @@
+{% extends 'content_base.html.twig' %}
+
+{% block title %}
+    {{ article.title }}
+{% endblock %}
+
+{% block content_body %}
+    <div class="row">
+        <div class="col-sm-12">
+            <img class="show-article-img" src="{{ asset(article.imagePath) }}">
+            <div class="show-article-title-container d-inline-block pl-3 align-middle">
+                <span class="show-article-title ">{{ article.title }}</span>
+                <br>
+                <span class="align-left article-details"><img class="article-author-img rounded-circle"
+                                                              src="{{ article.author.imagePath }}"> {{ article.author.firstName }}</span>
+                <span class="pl-2 article-details">
+                                    {{ article.publishedAt ? article.publishedAt|ago : 'unpublished' }}
+                                </span>
+                <span class="pl-2 article-details">
+                                    <span class="js-like-article-count">
+                                        {{ article.heartCount }}
+                                    </span>
+                                    <a href="{{ path('article_toggle_heart', {slug: article.slug}) }}"
+                                       class="fa fa-heart-o like-article js-like-article"></a>
+                                </span>
+                <span class="pl-2 article-details">
+                    {% for tag in article.tags %}
+                        <span class="badge badge-secondary">{{ tag.name }}</span>
+                    {% endfor %}
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="article-text">
+                {{ article.content|cached_markdown }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h3><i class="pr-3 fa fa-comment"></i>{{ article.nonDeletedComments|length }} Comments</h3>
+            <hr>
+
+            {% if is_granted('ROLE_USER') %}
+                <div class="row">
+                    <div class="col">
+                        <img class="comment-img rounded-circle"
+                             src="{{ app.user.imagePath }}">
+                        <div class="comment-container d-inline-block pl-3 align-top">
+                            <span class="commenter-name">{{ app.user.firstName }}</span>
+                            <div class="comment-form">
+                                {{ form_start(commentForm, {'action': path('article_comment', {slug: article.slug})}) }}
+                                {{ form_row(commentForm.content) }}
+                                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                                    Comment
+                                </button>
+                                {{ form_end(commentForm) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% for comment in article.nonDeletedComments %}
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="comment-container d-inline-block my-3 pl-3 align-top">
+                            <img class="comment-img rounded-circle"
+                                 src="{{ comment.author.imagePath }}">
+                            <span class="commenter-name"> {{ comment.author.firstName }}</span>
+                            <small>about {{ comment.createdAt|ago }}</small>
+
+                            {% if is_granted('ROLE_ADMIN') %}
+                                <a href="{{ path('app_homepage', {'_switch_user': comment.author.email}) }}">[Impersonation]</a>
+                            {% endif %}
+
+                            {% if comment.isDeleted %}
+                                <span class="fa fa-close"></span> deleted
+                            {% endif %}
+                            <br>
+                            <span class="comment">{{ comment.content }}</span>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="{{ asset('js/article_show.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'content_base.html.twig' %}
+
+{% block content_body %}
+    <h1>Edit the Article! 🚀</h1>
+    {{ form_start(articleForm) }}
+    {{ form_row(articleForm.title, {
+        label: 'Article title'
+    }) }}
+    {{ form_row(articleForm.author) }}
+    {{ form_row(articleForm.content) }}
+    {% if articleForm.publishedAt is defined %}
+        {{ form_row(articleForm.publishedAt) }}
+    {% endif %}
+    {% do articleForm.logo.setRendered() %}
+    <button type="submit" class="btn btn-primary">Edit!</button>
+    {{ form_end(articleForm) }}
+{% endblock %}
