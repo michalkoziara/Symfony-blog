@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87b4ef25-8b1e-4957-8ce7-2510a68f6956" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190112233758.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190112234246.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190113112728.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190113135654.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190113135823.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190113144011.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190113145101.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190113155555.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190113175728.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190113180615.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190113191605.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190119081640.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190119090614.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190119094758.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190119105701.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190119110028.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190119133811.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190120001757.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190120002220.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190120120150.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Migrations/Version20190120150021.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,12 +92,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="493">
+              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Version20190120202223.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190120202223.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1548015744084" expanded="true" signature="1108:1501" ph="CREATE TABLE... article" />
+                <marker date="1548015744084" expanded="true" signature="1695:1799" ph="CREATE TABLE... article_tag" />
+                <marker date="1548015744084" expanded="true" signature="1998:2262" ph="CREATE TABLE... comment" />
+                <marker date="1548015744084" expanded="true" signature="2456:2616" ph="CREATE TABLE... api_token" />
+                <marker date="1548015744084" expanded="true" signature="2726:2937" ph="CREATE TABLE... tag" />
+                <marker date="1548015744084" expanded="true" signature="3045:3358" ph="CREATE TABLE... user" />
+                <marker date="1548015744084" expanded="true" signature="3471:3606" ph="ALTER TABLE article... " />
+                <marker date="1548015744084" expanded="true" signature="3633:3793" ph="ALTER TABLE article_tag... " />
+                <marker date="1548015744084" expanded="true" signature="3820:3972" ph="ALTER TABLE article_tag... " />
+                <marker date="1548015744084" expanded="true" signature="3999:4137" ph="ALTER TABLE comment... " />
+                <marker date="1548015744084" expanded="true" signature="4164:4300" ph="ALTER TABLE comment... " />
+                <marker date="1548015744084" expanded="true" signature="4327:4463" ph="ALTER TABLE api_token... " />
+                <marker date="1548015744084" expanded="true" signature="4836:4895" ph="ALTER TABLE article_tag... " />
+                <marker date="1548015744084" expanded="true" signature="4922:4977" ph="ALTER TABLE comment... " />
+                <marker date="1548015744084" expanded="true" signature="5004:5063" ph="ALTER TABLE article_tag... " />
+                <marker date="1548015744084" expanded="true" signature="5090:5144" ph="ALTER TABLE article... " />
+                <marker date="1548015744084" expanded="true" signature="5171:5226" ph="ALTER TABLE comment... " />
+                <marker date="1548015744084" expanded="true" signature="5253:5310" ph="ALTER TABLE api_token... " />
+                <marker date="1548015744084" expanded="true" signature="5647:5665" ph="DROP TABLE a... " />
+                <marker date="1548015744084" expanded="true" signature="5692:5714" ph="DROP TABLE a... " />
+                <marker date="1548015744084" expanded="true" signature="5741:5759" ph="DROP TABLE c... " />
+                <marker date="1548015744084" expanded="true" signature="5786:5806" ph="DROP TABLE a... " />
+                <marker date="1548015744084" expanded="true" signature="5833:5847" ph="DROP TABLE t... " />
+                <marker date="1548015744084" expanded="true" signature="5874:5891" ph="DROP TABLE &quot;... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -371,7 +428,7 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="154" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
@@ -441,17 +498,13 @@
             <path>
               <item name="TAI" type="b2602c69:ProjectViewProjectNode" />
               <item name="TAI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="TAI" type="b2602c69:ProjectViewProjectNode" />
               <item name="TAI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="TAI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TAI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="TAI" type="b2602c69:ProjectViewProjectNode" />
@@ -527,15 +580,15 @@
       <workItem from="1547371251907" duration="30389000" />
       <workItem from="1547830008879" duration="6792000" />
       <workItem from="1547879573731" duration="57949000" />
-      <workItem from="1547982526470" duration="31882000" />
+      <workItem from="1547982526470" duration="32254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176037000" />
+    <option name="totallyTimeSpent" value="176409000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -572,14 +625,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="49" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/article_show.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -997,9 +1042,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="12" />
+        <state relative-caret-position="493">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190120202223.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1548015744084" expanded="true" signature="1108:1501" ph="CREATE TABLE... article" />
+            <marker date="1548015744084" expanded="true" signature="1695:1799" ph="CREATE TABLE... article_tag" />
+            <marker date="1548015744084" expanded="true" signature="1998:2262" ph="CREATE TABLE... comment" />
+            <marker date="1548015744084" expanded="true" signature="2456:2616" ph="CREATE TABLE... api_token" />
+            <marker date="1548015744084" expanded="true" signature="2726:2937" ph="CREATE TABLE... tag" />
+            <marker date="1548015744084" expanded="true" signature="3045:3358" ph="CREATE TABLE... user" />
+            <marker date="1548015744084" expanded="true" signature="3471:3606" ph="ALTER TABLE article... " />
+            <marker date="1548015744084" expanded="true" signature="3633:3793" ph="ALTER TABLE article_tag... " />
+            <marker date="1548015744084" expanded="true" signature="3820:3972" ph="ALTER TABLE article_tag... " />
+            <marker date="1548015744084" expanded="true" signature="3999:4137" ph="ALTER TABLE comment... " />
+            <marker date="1548015744084" expanded="true" signature="4164:4300" ph="ALTER TABLE comment... " />
+            <marker date="1548015744084" expanded="true" signature="4327:4463" ph="ALTER TABLE api_token... " />
+            <marker date="1548015744084" expanded="true" signature="4836:4895" ph="ALTER TABLE article_tag... " />
+            <marker date="1548015744084" expanded="true" signature="4922:4977" ph="ALTER TABLE comment... " />
+            <marker date="1548015744084" expanded="true" signature="5004:5063" ph="ALTER TABLE article_tag... " />
+            <marker date="1548015744084" expanded="true" signature="5090:5144" ph="ALTER TABLE article... " />
+            <marker date="1548015744084" expanded="true" signature="5171:5226" ph="ALTER TABLE comment... " />
+            <marker date="1548015744084" expanded="true" signature="5253:5310" ph="ALTER TABLE api_token... " />
+            <marker date="1548015744084" expanded="true" signature="5647:5665" ph="DROP TABLE a... " />
+            <marker date="1548015744084" expanded="true" signature="5692:5714" ph="DROP TABLE a... " />
+            <marker date="1548015744084" expanded="true" signature="5741:5759" ph="DROP TABLE c... " />
+            <marker date="1548015744084" expanded="true" signature="5786:5806" ph="DROP TABLE a... " />
+            <marker date="1548015744084" expanded="true" signature="5833:5847" ph="DROP TABLE t... " />
+            <marker date="1548015744084" expanded="true" signature="5874:5891" ph="DROP TABLE &quot;... " />
+          </folding>
         </state>
       </provider>
     </entry>
