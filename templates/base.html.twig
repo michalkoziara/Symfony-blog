@@ -67,18 +67,15 @@
     </div>
 </nav>
 
-{% for label, flashes in app.session.flashbag.all %}
-    {% for flash in flashes %}
-        {% if ( label == 'success' ) %}
-            <div class="alert alert-success">
-                {{ message }}
-            </div>
-        {% elseif ( label == 'error' ) %}
-            <div class="alert alert-danger">
-                {{ message }}
-            </div>
-        {% endif %}
-    {% endfor %}
+{% for message in app.flashes('success') %}
+    <div class="alert alert-success">
+        {{ message }}
+    </div>
+{% endfor %}
+{% for message in app.flashes('error') %}
+    <div class="alert alert-danger">
+        {{ message }}
+    </div>
 {% endfor %}
 
 {% block body %}{% endblock %}
