@@ -45,7 +45,7 @@ class CommentAdminController extends AbstractController
     {
         $em->remove($comment);
         $em->flush();
-        $this->addFlash('success', 'Comment Deleted! Inaccuracies squashed!');
+        $this->addFlash('success', 'Komentarz usunięty!');
 
         return $this->redirectToRoute(
             'comment_admin'
@@ -61,7 +61,7 @@ class CommentAdminController extends AbstractController
         $comment->setIsDeleted(true);
         $em->persist($comment);
         $em->flush();
-        $this->addFlash('success', 'Comment Blocked! Inaccuracies squashed!');
+        $this->addFlash('success', 'Komentarz zablokowany');
 
         return $this->redirectToRoute(
             'comment_admin'

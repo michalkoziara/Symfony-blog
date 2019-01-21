@@ -33,7 +33,7 @@ class ArticleAdminController extends AbstractController
             /** @var UploadedFile $file */
             $file = $form['logo']->getData();
 
-            if (!in_array($file->getExtension(), array('png', 'jpeg', 'jpg'))) {
+            if (!in_array($file->getExtension(), array('.png', '.jpeg', '.jpg'))) {
                 return $this->redirectToRoute('app_homepage');
             }
 
@@ -49,8 +49,8 @@ class ArticleAdminController extends AbstractController
             /** @var User $user */
             $user = $this->getUser();
 
-            $slack->sendMessage($user, 'I added new article! Check it out! :)');
-            $this->addFlash('success', 'Article Created! Knowledge is power!');
+            $slack->sendMessage($user, 'Dodałem nowy artykuł! Sprawdźcie :)');
+            $this->addFlash('success', 'Artykuł dodany!');
 
             return $this->redirectToRoute('app_homepage');
         }
@@ -83,7 +83,7 @@ class ArticleAdminController extends AbstractController
             $article = $form->getData();
             $em->persist($article);
             $em->flush();
-            $this->addFlash('success', 'Article Updated! Inaccuracies squashed!');
+            $this->addFlash('success', 'Artykuł zaktualizowany!');
 
             return $this->redirectToRoute(
                 'admin_article_edit',
@@ -105,7 +105,7 @@ class ArticleAdminController extends AbstractController
      * @Route("/admin/article/{id}/delete", name="admin_article_delete")
      * @IsGranted("MANAGE", subject="article")
      */
-    public function delete(Article $article, Request $request, EntityManagerInterface $em)
+    public function delete(Article $article, EntityManagerInterface $em)
     {
         $fileSystem = new Filesystem();
 
@@ -120,7 +120,7 @@ class ArticleAdminController extends AbstractController
         }
         $em->remove($article);
         $em->flush();
-        $this->addFlash('success', 'Article Deleted! Inaccuracies squashed!');
+        $this->addFlash('success', 'Artykuł usunięty!');
 
         return $this->redirectToRoute(
             'admin_article_list'

@@ -19,7 +19,7 @@ class ArticleController extends AbstractController
     /**
      * @Route("/", name="app_homepage")
      */
-    public function homepage(ArticleRepository $repository, Request $request)
+    public function homepage(ArticleRepository $repository)
     {
         $articles = $repository->findAllPublishedOrderedByNewest();
 
@@ -92,7 +92,7 @@ class ArticleController extends AbstractController
         $em->persist($comment);
         $em->flush();
 
-        $this->addFlash('success', 'Comment Added! Inaccuracies squashed!');
+        $this->addFlash('success', 'Komentarz dodany');
 
         return $this->redirectToRoute(
             'article_show',
