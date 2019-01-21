@@ -33,7 +33,7 @@ class ArticleAdminController extends AbstractController
             /** @var UploadedFile $file */
             $file = $form['logo']->getData();
 
-            if (!in_array($file->getExtension(), array('.png', '.jpeg', '.jpg'))) {
+            if (!in_array($file->getClientOriginalExtension(), array('.png', '.jpeg', '.jpg'))) {
                 return $this->redirectToRoute('app_homepage');
             }
 
