@@ -40,7 +40,7 @@
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <h3><i class="pr-3 fa fa-comment"></i>{{ article.nonDeletedComments|length }} Comments</h3>
+            <h3><i class="pr-3 fa fa-comment"></i>{{ article.nonDeletedComments|length }} Komentarzy</h3>
             <hr>
 
             {% if is_granted('ROLE_USER') %}
@@ -54,7 +54,7 @@
                                 {{ form_start(commentForm, {'action': path('article_comment', {slug: article.slug})}) }}
                                 {{ form_row(commentForm.content) }}
                                 <button class="btn btn-lg btn-primary btn-block" type="submit">
-                                    Comment
+                                    Skomentuj
                                 </button>
                                 {{ form_end(commentForm) }}
                             </div>
@@ -70,10 +70,10 @@
                             <img class="comment-img rounded-circle"
                                  src="{{ comment.author.imagePath }}">
                             <span class="commenter-name"> {{ comment.author.firstName }}</span>
-                            <small>about {{ comment.createdAt|ago }}</small>
+                            <small>około {{ comment.createdAt|ago }}</small>
 
                             {% if is_granted('ROLE_ADMIN') %}
-                                <a href="{{ path('app_homepage', {'_switch_user': comment.author.email}) }}">[Impersonation]</a>
+                                <a href="{{ path('app_homepage', {'_switch_user': comment.author.email}) }}">[Podejrzyj]</a>
                             {% endif %}
 
                             {% if comment.isDeleted %}

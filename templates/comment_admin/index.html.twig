@@ -1,13 +1,13 @@
 {% extends 'content_base.html.twig' %}
 
-{% block title %}Manage Comments{% endblock %}
+{% block title %}Zarządzaj komentarzami{% endblock %}
 
 {% block content_class %}{{ parent() }} show-article-container-border-green{% endblock %}
 
 {% block content_body %}
     <div class="row">
         <div class="col-sm-12">
-            <h1>Manage Comments ({{ pagination.getTotalItemCount }})</h1>
+            <h1>Komentarze ({{ pagination.getTotalItemCount }})</h1>
             <form>
                 <div class="input-group mb-3">
                     <input type="text"
@@ -27,11 +27,11 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Article</th>
-                    <th>Author</th>
-                    <th>Comment</th>
-                    <th>Created</th>
-                    <th>Blocked</th>
+                    <th>Artykuł</th>
+                    <th>Autor</th>
+                    <th>Komentarz</th>
+                    <th>Stworzony</th>
+                    <th>Zablokowany</th>
                     <th> </th>
                     <th> </th>
                 </tr>
@@ -78,7 +78,7 @@
                 {% else %}
                     <tr>
                         <td colspan="4" class="text-center">
-                            No comments found
+                            Nie ma żadnych komentarzy
                         </td>
                     </tr>
                 {% endfor %}

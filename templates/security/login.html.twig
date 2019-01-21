@@ -28,12 +28,10 @@
 
                 {{ form_start(loginForm) }}
                 {{ form_row(loginForm.email, {
-                    attr: { placeholder: 'Email' },
-                    'label':'Email'
+                    attr: { placeholder: 'Email' }
                 }) }}
                 {{ form_row(loginForm.password, {
-                    attr: { placeholder: 'Hasło' },
-                    'label':'Hasło'
+                    attr: { placeholder: 'Password' }
                 }) }}
                 {{ form_row(loginForm.rememberMe) }}
                 <button class="btn btn-lg btn-primary btn-block" type="submit">

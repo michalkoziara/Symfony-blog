@@ -8,15 +8,11 @@ use Doctrine\Common\Persistence\ObjectManager;
 
 class ArticleFixtures extends BaseFixture implements DependentFixtureInterface
 {
-    private static $articleTitles = [
-        'Why Asteroids Taste Like Bacon',
-        'Life on Planet Mercury: Tan, Relaxing and Fabulous',
-        'Light Speed Travel: Fountain of Youth or Fallacy',
-    ];
     private static $articleImages = [
         'asteroid.jpeg',
         'mercury.jpeg',
         'lightspeed.png',
+        'meteor-shower.jpg',
     ];
 
     public function getDependencies()
@@ -34,7 +30,7 @@ class ArticleFixtures extends BaseFixture implements DependentFixtureInterface
             'main_articles',
             function ($count) {
                 $article = new Article();
-                $article->setTitle($this->faker->randomElement(self::$articleTitles))
+                $article->setTitle($this->faker->sentence($nbWords = 4, $variableNbWords = true))
                     ->setContent(
                         <<<EOF
 Spicy **jalapeno bacon** ipsum dolor amet veniam shank in dolore. Ham hock nisi landjaeger cow,
@@ -54,7 +50,6 @@ fugiat.
 EOF
                     );
 
-                // publish most articles
                 if ($this->faker->boolean(70)) {
                     $article->setPublishedAt(
                         $this->faker->dateTimeBetween('-100 days', '-1 days')
