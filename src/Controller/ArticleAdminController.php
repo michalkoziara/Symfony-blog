@@ -33,8 +33,9 @@ class ArticleAdminController extends AbstractController
             /** @var UploadedFile $file */
             $file = $form['logo']->getData();
 
-            if (!in_array($file->getClientOriginalExtension(), array('.png', '.jpeg', '.jpg'))) {
+            if ('.png' !== $file->getClientOriginalExtension()) {
                 $this->addFlash('error', 'Błędne rozszerzenie pliku!');
+
                 return $this->redirectToRoute('app_homepage');
             }
 
