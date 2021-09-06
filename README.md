@@ -16,6 +16,8 @@ your local machine for development and testing purposes.
 
 Detailed information about installation and configurations are provided at developers' site.
 
+For dockerization of this project see my [Symfony-blog-docker](https://github.com/michalkoziara/Symfony-blog-docker) repository.
+
 ## Technology Stack
 
 * Symfony [4.2]
